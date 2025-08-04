@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>DWRTS</title>
+    <link rel="stylesheet" href="eric.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>DWR-Gauge Reader MS</h1>
+            <p class="subtitle">Ukusanyaji wa Data za Mabonde</p>
+        </div>
+
+        <div class="location-info">
+            <div class="location-header">
+                <span class="location-icon">📍</span>
+                <span class="location-title">Location: MGETA001</span>
+            </div>
+            <div class="location-details">
+                <p>Mgeta River Gauging Station</p>
+                <p><strong>Lat:</strong>  | <strong>Lon:</strong>  </p>
+                <p><strong>Last Reading:</strong> 2hrs ago</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <label class="section-label">Parameter Selection</label>
+            <div class="dropdown-container">
+                <select class="dropdown">
+                    <option>Water Level (Stage) - STAGE</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Scheduled Reading Time -->
+        <div class="section">
+            <div class="reading-time-header">
+                <span class="section-label">Scheduled Reading Time</span>
+                <div class="time-display">06:00:00 (Morning)</div>
+                <div class="current-time">
+                    <span class="current-time-label">Current Time:</span>
+                    <span class="time-value">08:30:00</span>
+                    <span class="warning-icon">⚠️</span>
+                    <span class="late-indicator">2h 30m Late</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <label class="section-label">Value</label>
+            <div class="value-input-container">
+                <input type="number" class="value-input" placeholder="0.00" step="0.01">
+                <span class="unit">meters</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <label class="section-label">Note/Comments</label>
+            <textarea class="comments-box" placeholder="Enter your observations, weather conditions, or any notes..."></textarea>
+        </div>
+
+        <div class="action-buttons">
+            <button class="attach-photo-btn">
+                📷 Attach Photo
+            </button>
+            <button class="submit-btn">
+                Submit
+            </button>
+        </div>
+
+        <div class="connection-status">
+            <span class="connection-text">Copyright &copy Ministry of Water</span>
+        </div>
+    </div>
+</body>
+</html>
